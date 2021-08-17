@@ -101,5 +101,6 @@ private fun doPasswordHaveOneCapitalAndSmallLetter(password: String): PasswordCh
 private fun isPasswordOfNeededLength(password: String): PasswordCheckList {
     val passwordCheck = PasswordCheckList.PASSWORD_LENGTH
     passwordCheck.isValid = password.length >= MINIMUM_PASSWORD_LENGTH
+    // commented new
     return passwordCheck
 }
