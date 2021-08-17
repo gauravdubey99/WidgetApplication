@@ -18,7 +18,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.widgetapplication.enums.PasswordCheckList
-import com.example.widgetapplication.ui.theme.PrimaryColor
 
 @Composable
 fun BulletListWidget(textList: List<PasswordCheckList>, shouldShowBulletList: Boolean) {
@@ -47,7 +46,7 @@ fun BulletListWidget(textList: List<PasswordCheckList>, shouldShowBulletList: Bo
 }
 
 private fun getColor(isValid : Boolean): Color {
-    return if (isValid) PrimaryColor else Color.Red
+    return if (isValid) Color.Blue else Color.Red
 }
 
 @Preview

@@ -17,7 +17,6 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
-import com.example.widgetapplication.ui.theme.PrimaryColor
 
 @Composable
 fun EmailWidget(email: String, onEmailUpdate: (String) -> Unit) {
@@ -25,7 +24,7 @@ fun EmailWidget(email: String, onEmailUpdate: (String) -> Unit) {
         mutableStateOf(true)
     }
 
-    val indicatorColor = if (isEmailEditInProgressOrProperFormat.value) PrimaryColor else Color.Red
+    val indicatorColor = if (isEmailEditInProgressOrProperFormat.value) Color.Blue else Color.Red
 
     OutlinedTextField(
         value = email,
