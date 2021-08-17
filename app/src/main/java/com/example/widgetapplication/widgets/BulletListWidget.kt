@@ -53,5 +53,5 @@ private fun getColor(isValid : Boolean): Color {
 @Preview
 @Composable
 fun PreviewList() {
-    BulletListWidget(textList = listOf(PasswordCheckList.PASSWORD_LENGTH, PasswordCheckList.ONE_UPPER_LOWER_CASE), false)
+    BulletListWidget(textList = listOf(PasswordCheckList.PASSWORD_LENGTH, PasswordCheckList.ONE_UPPER_LOWER_CASE_ONE_NUMBER), false)
 }
